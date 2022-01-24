@@ -34,55 +34,81 @@ public class mäng extends Canvas implements Runnable{
         ///////siin ta votab listi kohdatest
         HashMap<String,asukoht> kohad = ImportAsukohad.ImportAsukohad();
 
-        System.out.println(ylehype("V1-1","S2-3",kohad)); /////neidis
+
 
         int distance = 140;
         int size = 20;
         double xandyration= 0.55;
         for(int i = 0; i<9;i++){
             handeler.addgameobject(new koht(scale(960-size+(i-4)*distance),scale(540-size),ID.mangija2, "punkt"));////////////keskmine  ///!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<7;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-3)*distance)),scale((int)(540-size-distance*xandyration)),ID.mangija2, "punkt"));  //////yks syles //!!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<7;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-3)*distance)),scale((int)(540-size+distance*xandyration)),ID.mangija2, "punkt"));  /////yks alla //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-2)*distance)),scale((int)(540-size-distance*2*xandyration)),ID.mangija2, "punkt"));  ///kaks yles //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-2)*distance)),scale((int)(540-size+distance*2*xandyration)),ID.mangija2, "punkt")); ////kaks alla //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-2)*distance)),scale((int)(540-size-distance*3*xandyration)),ID.mangija2, "punkt"));  ///kolm yles //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-2)*distance)),scale((int)(540-size+distance*3*xandyration)),ID.mangija2, "punkt")); ////kolm alla //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-2)*distance)),scale((int)(540-size-distance*4*xandyration)),ID.mangija2, "punkt"));  ///neli yles //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i++){
             handeler.addgameobject(new koht(scale((int)( 960-size+(i-2)*distance)),scale((int)(540-size+distance*4*xandyration)),ID.mangija2, "punkt")); ////neli alla //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
 
         for(int i = 0; i<5;i++){
             if(i!=2) {
                 handeler.addgameobject(new koht(scale((int) (960 - size + (i - 2) * distance)), scale((int) (540 - size - distance * 5 * xandyration)), ID.mangija2, "punkt"));  ///viis yles //!!yhed read
+                gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+                System.out.println(tempobject.Getx()+" "+tempobject.Gety());
             }
         }
         for(int i = 0; i<5;i++){
             if(i!=2) {
                 handeler.addgameobject(new koht(scale((int) (960 - size + (i - 2) * distance)), scale((int) (540 - size + distance * 5 * xandyration)), ID.mangija2, "punkt")); ////viis alla //!!yhed read
+                gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+                System.out.println(tempobject.Getx()+" "+tempobject.Gety());
             }
         }
 
         for(int i = 0; i<5;i=i+4){
                 handeler.addgameobject(new koht(scale((int) (960 - size + (i - 2) * distance)), scale((int) (540 - size - distance * 6 * xandyration)), ID.mangija2, "punkt"));  ///kuus yles //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<5;i=i+4){
                 handeler.addgameobject(new koht(scale((int) (960 - size + (i - 2) * distance)), scale((int) (540 - size + distance * 6 * xandyration)), ID.mangija2, "punkt")); ////kuus alla //!!yhed read
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
 
 
@@ -90,39 +116,63 @@ public class mäng extends Canvas implements Runnable{
 
         for(int i = 0; i<8;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-4)*distance+distance*0.5)),scale( (int)(540-size+distance*0.5*xandyration)),ID.mangija2, "punkt"));////////////yks all  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<8;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-4)*distance+distance*0.5)),scale( (int)(540-size-distance*0.5*xandyration)),ID.mangija2, "punkt"));////////////yks yles  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<6;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-3)*distance+distance*0.5)),scale( (int)(540-size+distance*1.5*xandyration)),ID.mangija2, "punkt"));////////////kaks all  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<6;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-3)*distance+distance*0.5)),scale((int)(540-size-distance*1.5*xandyration)),ID.mangija2, "punkt"));////////////kaks yles  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale( (int)(540-size+distance*2.5*xandyration)),ID.mangija2, "punkt"));////////////kolm all  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale((int)(540-size-distance*2.5*xandyration)),ID.mangija2, "punkt"));////////////kolm yles  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale( (int)(540-size+distance*3.5*xandyration)),ID.mangija2, "punkt"));////////////neli all  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale((int)(540-size-distance*3.5*xandyration)),ID.mangija2, "punkt"));////////////neli yles  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale( (int)(540-size+distance*4.5*xandyration)),ID.mangija2, "punkt"));////////////viis all  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i++){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale((int)(540-size-distance*4.5*xandyration)),ID.mangija2, "punkt"));////////////viis yles  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i=i+3){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale( (int)(540-size+distance*5.5*xandyration)),ID.mangija2, "punkt"));////////////kuus all  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
         for(int i = 0; i<4;i=i+3){
             handeler.addgameobject(new koht(scale((int)(960-size+(i-2)*distance+distance*0.5)),scale((int)(540-size-distance*5.5*xandyration)),ID.mangija2, "punkt"));////////////kuus yles  ///!!teised read (need mis esimestest nihhkes)
+            gameobject tempobject = handeler.object.get(handeler.object.size()-1);
+            System.out.println(tempobject.Getx()+" "+tempobject.Gety());
         }
 
 
